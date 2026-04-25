@@ -310,49 +310,17 @@
     </section>
 
     <section class="section contact reveal" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Start your premium design consultation.</h2>
-        <p class="contact-copy">Share your home type, city, and design needs. We’ll get back with the right interior or exterior design direction.</p>
-        <div class="location-strip" aria-label="Service locations">
-          <span>Chennai</span>
-          <span>Bengaluru</span>
-          <span>Mumbai</span>
+      <div class="contact-info-stack">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Start your premium design consultation.</h2>
+          <p class="contact-copy">Share your home type, city, and design needs. We’ll get back with the right interior or exterior design direction.</p>
+          <div class="location-strip" aria-label="Service locations">
+            <span>Chennai</span>
+            <span>Bengaluru</span>
+            <span>Mumbai</span>
+          </div>
         </div>
-      </div>
-      <div class="contact-stack">
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-          <label>
-            Phone or Email
-            <input type="text" name="contact" placeholder="+91 98765 43210" required>
-          </label>
-          <label>
-            City
-            <select name="city">
-              <option>Chennai</option>
-              <option>Bengaluru</option>
-              <option>Mumbai</option>
-            </select>
-          </label>
-          <label>
-            Project Type
-            <select name="project">
-              <option>Interior Design</option>
-              <option>Exterior Design</option>
-              <option>Modular Kitchen</option>
-              <option>3D Visualization</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" placeholder="Tell us about your home, rooms, or plot size"></textarea>
-          </label>
-          <button class="primary-button" type="submit">Get Free Design</button>
-        </form>
 
         <section class="branch-map" aria-labelledby="branchMapTitle">
           <div class="branch-map-head">
@@ -389,12 +357,73 @@
           </div>
         </section>
       </div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Phone or Email
+            <input type="text" name="contact" placeholder="+91 98765 43210" required>
+          </label>
+          <label>
+            City
+            <select name="city">
+              <option>Chennai</option>
+              <option>Bengaluru</option>
+              <option>Mumbai</option>
+            </select>
+          </label>
+          <label>
+            Project Type
+            <select name="project">
+              <option>Interior Design</option>
+              <option>Exterior Design</option>
+              <option>Modular Kitchen</option>
+              <option>3D Visualization</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us about your home, rooms, or plot size"></textarea>
+          </label>
+          <button class="primary-button" type="submit">Get Free Design</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Best Home 3D Interiors & Exteriors</p>
-    <p>Luxury interior, exterior, and modular kitchen design presentation.</p>
+    <div class="footer-grid">
+      <div class="footer-company">
+        <h3>Best Home 3D</h3>
+        <p>Luxury architectural and interior design experiences built for modern visual presentation.</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@besthome3d.example.com">hello@besthome3d.example.com</a>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+      </div>
+      
+      <div class="footer-branch">
+        <h4>Chennai Studio</h4>
+        <p>128 ECR Road, Palavakkam<br>Chennai, Tamil Nadu 600041<br>India</p>
+      </div>
+
+      <div class="footer-branch">
+        <h4>Bengaluru Office</h4>
+        <p>45 Residency Road, Ashok Nagar<br>Bengaluru, Karnataka 560025<br>India</p>
+      </div>
+
+      <div class="footer-branch">
+        <h4>Mumbai Presenter</h4>
+        <p>Level 8, BKC Corporate Park<br>Bandra Kurla Complex, Mumbai<br>Maharashtra 400051</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Best Home 3D Interiors & Exteriors. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
