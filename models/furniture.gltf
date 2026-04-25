@@ -1,0 +1,406 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Best Home 3D local model generator"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "gltf sofa seat",
+      "mesh": 0,
+      "translation": [
+        -1.15,
+        0.45,
+        0
+      ],
+      "scale": [
+        2.6,
+        0.55,
+        1.05
+      ]
+    },
+    {
+      "name": "gltf sofa back",
+      "mesh": 0,
+      "translation": [
+        -1.15,
+        0.95,
+        -0.48
+      ],
+      "scale": [
+        2.75,
+        1.2,
+        0.22
+      ]
+    },
+    {
+      "name": "gltf sofa left arm",
+      "mesh": 0,
+      "translation": [
+        -2.62,
+        0.72,
+        0
+      ],
+      "scale": [
+        0.28,
+        0.95,
+        1.15
+      ]
+    },
+    {
+      "name": "gltf sofa right arm",
+      "mesh": 0,
+      "translation": [
+        0.32,
+        0.72,
+        0
+      ],
+      "scale": [
+        0.28,
+        0.95,
+        1.15
+      ]
+    },
+    {
+      "name": "gltf table top",
+      "mesh": 1,
+      "translation": [
+        1.25,
+        0.48,
+        0.2
+      ],
+      "scale": [
+        1.65,
+        0.16,
+        0.95
+      ]
+    },
+    {
+      "name": "gltf table leg a",
+      "mesh": 2,
+      "translation": [
+        0.55,
+        0.2,
+        -0.2
+      ],
+      "scale": [
+        0.12,
+        0.4,
+        0.12
+      ]
+    },
+    {
+      "name": "gltf table leg b",
+      "mesh": 2,
+      "translation": [
+        1.95,
+        0.2,
+        -0.2
+      ],
+      "scale": [
+        0.12,
+        0.4,
+        0.12
+      ]
+    },
+    {
+      "name": "gltf table leg c",
+      "mesh": 2,
+      "translation": [
+        0.55,
+        0.2,
+        0.6
+      ],
+      "scale": [
+        0.12,
+        0.4,
+        0.12
+      ]
+    },
+    {
+      "name": "gltf table leg d",
+      "mesh": 2,
+      "translation": [
+        1.95,
+        0.2,
+        0.6
+      ],
+      "scale": [
+        0.12,
+        0.4,
+        0.12
+      ]
+    },
+    {
+      "name": "gltf lamp stand",
+      "mesh": 2,
+      "translation": [
+        2.75,
+        0.8,
+        -0.58
+      ],
+      "scale": [
+        0.1,
+        1.6,
+        0.1
+      ]
+    },
+    {
+      "name": "gltf lamp shade",
+      "mesh": 3,
+      "translation": [
+        2.75,
+        1.75,
+        -0.58
+      ],
+      "scale": [
+        0.72,
+        0.5,
+        0.72
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "fabric cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "wood cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "gold cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "cream cube",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "indices": 2,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "charcoal fabric",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13,
+          0.14,
+          0.15,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.82
+      }
+    },
+    {
+      "name": "warm walnut",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.42,
+          0.23,
+          0.11,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.55
+      }
+    },
+    {
+      "name": "brushed gold",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.88,
+          0.64,
+          0.22,
+          1
+        ],
+        "metallicFactor": 0.35,
+        "roughnessFactor": 0.32
+      }
+    },
+    {
+      "name": "cream shade",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.83,
+          0.52,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "data:application/octet-stream;base64,AAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAD8AAAC/AAAAPwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAvwAAAD8AAAA/AAAAvwAAAD8AAAC/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAPwAAAD8AAAC/AAAAPwAAAD8AAAA/AAAAvwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAC/AAAAvwAAAD8AAAC/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAAAAAvwAAAL8AAAA/AAAAPwAAAL8AAAA/AAAAAAAAAD8AAAA/AAAAvwAAAL8AAAC/AAAAAAAAAD8AAAC/AAAAPwAAAL8AAAC/AAAAvwAAAL8AAAC/AAAAvwAAAL8AAAA/AAAAAAAAAD8AAAA/AAAAAAAAAD8AAAC/AAAAPwAAAL8AAAA/AAAAPwAAAL8AAAC/AAAAAAAAAD8AAAC/AAAAAAAAAD8AAAA/AAAAvwAAAL8AAAC/AAAAPwAAAL8AAAC/AAAAPwAAAL8AAAA/AAAAvwAAAL8AAAA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/hetRv4Xr0T4AAAAAhetRv4Xr0T4AAAAAhetRv4Xr0T4AAAAAhetRv4Xr0T4AAAAAhetRP4Xr0T4AAAAAhetRP4Xr0T4AAAAAhetRP4Xr0T4AAAAAhetRP4Xr0T4AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAABAAIAAwAEAAUABgAHAAgABgAIAAkACgALAAwACgAMAA0ADgAPABAADgAQABEA",
+      "byteLength": 1128
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 288,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 648,
+      "byteLength": 216,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 864,
+      "byteLength": 216,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1080,
+      "byteLength": 48,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR",
+      "min": [
+        0
+      ],
+      "max": [
+        23
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 18,
+      "type": "VEC3",
+      "min": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 18,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 24,
+      "type": "SCALAR",
+      "min": [
+        0
+      ],
+      "max": [
+        17
+      ]
+    }
+  ]
+}
