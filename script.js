@@ -205,6 +205,53 @@ function setupGalleryTabs() {
   });
 }
 
+function setupInteractiveModels() {
+  const modelHouse = document.getElementById("model-house");
+  const modelFurniture = document.getElementById("model-furniture");
+  
+  if (window.BEST_HOME_GLTF_MODELS) {
+    if (modelHouse && window.BEST_HOME_GLTF_MODELS.house) {
+      const blobHouse = new Blob([JSON.stringify(window.BEST_HOME_GLTF_MODELS.house)], { type: "application/json" });
+      modelHouse.src = URL.createObjectURL(blobHouse);
+    }
+    
+    if (modelFurniture && window.BEST_HOME_GLTF_MODELS.furnitureSet) {
+      const blobFurn = new Blob([JSON.stringify(window.BEST_HOME_GLTF_MODELS.furnitureSet)], { type: "application/json" });
+      modelFurniture.src = URL.createObjectURL(blobFurn);
+    }
+  }
+
+  const viewers = document.querySelectorAll(".scroll-3d-model");
+  
+  if (!viewers.length) return;
+  
+  const updateModelScrolls = () => {
+    const viewportHeight = window.innerHeight;
+    
+    viewers.forEach(viewer => {
+      const rect = viewer.getBoundingClientRect();
+      const offsetFromCenter = rect.top + rect.height / 2 - viewportHeight / 2;
+      const progress = offsetFromCenter / viewportHeight * -1; // -0.5 when at bottom, 0.5 when at top
+      
+      const clamped = Math.max(-1, Math.min(1, progress));
+      const defaultOrbit = viewer.getAttribute("data-initial-orbit");
+      if (!defaultOrbit) return;
+      
+      const parts = defaultOrbit.split(" ");
+      const baseTheta = parseFloat(parts[0]) || 0;
+      
+      // Calculate the new Y-axis orbit angle based on scroll
+      const orbitX = baseTheta + (clamped * 90); // Swings 90 degrees mapped to scroll
+      
+      viewer.cameraOrbit = `${orbitX}deg ${parts[1]} ${parts[2]}`;
+    });
+  };
+  
+  updateModelScrolls();
+  // Tie the update to scroll explicitly using requestAnimationFrame for performance
+  window.addEventListener("scroll", () => requestAnimationFrame(updateModelScrolls), { passive: true });
+}
+
 setupLoader();
 setupNavigation();
 setupScrollEffects();
@@ -214,3 +261,4 @@ setupTiltCards();
 setupBranchMap();
 setupContactForm();
 setupGalleryTabs();
+setupInteractiveModels();

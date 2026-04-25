@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="models/model-data.js"></script>
 </head>
 <body>
   <div class="loader" id="loader">
@@ -73,6 +75,50 @@
       </div>
     </section>
 
+    <section class="section video-showreel reveal" id="showreel">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Video Showreel</p>
+          <h2>Experience spaces in motion.</h2>
+        </div>
+        <p>Cinematic walkthroughs designed to communicate material scale, lighting atmosphere, and the true feeling of a luxury home.</p>
+      </div>
+      
+      <div class="video-grid">
+        <article class="video-card">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/DoUIYpwVLK0?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&enablejsapi=1" 
+              title="Interior Walkthrough - Luxury Home Design" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-label">
+            <span>01</span>
+            <h3>Interior Walkthrough</h3>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/4jnzf1yj48M?autoplay=0&mute=0&controls=1&rel=0&modestbranding=1&enablejsapi=1" 
+              title="Exterior Masterplan - Architectural Visualization" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-label">
+            <span>02</span>
+            <h3>Exterior Masterplan</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section services reveal" id="services">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
@@ -123,8 +169,8 @@
         <p>Curated interior visuals with layered composition, hover depth, and a premium gallery treatment.</p>
       </div>
       <div class="portfolio-grid interior-grid">
-        <article class="portfolio-card featured tilt-card scroll-3d" data-depth="0.14">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="Warm luxury living room">
+        <article class="portfolio-card featured tilt-card" data-depth="0.14">
+          <model-viewer id="model-furniture" class="scroll-3d-model" alt="3D Furniture Model" shadow-intensity="1" data-initial-orbit="0deg 65deg auto" camera-orbit="0deg 65deg auto" disable-zoom disable-pan style="background-color: var(--bg-soft);"></model-viewer>
           <div class="portfolio-overlay">
             <span>Living Room</span>
             <h3>Warm Minimal Residence</h3>
@@ -164,9 +210,9 @@
         <p>Clean masonry-style layout with premium imagery, subtle hover motion, and darker presentation layers.</p>
       </div>
       <div class="masonry-grid">
-        <article class="masonry-card tilt-card scroll-3d" data-depth="0.12">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Modern glass facade villa">
-          <div class="masonry-overlay"><span>Villa Facade</span><h3>Glass Elevation</h3></div>
+        <article class="masonry-card tilt-card" data-depth="0.12">
+          <model-viewer id="model-house" class="scroll-3d-model" alt="3D House Model" shadow-intensity="1" data-initial-orbit="-30deg 70deg auto" camera-orbit="-30deg 70deg auto" disable-zoom disable-pan style="background-color: var(--bg-soft);"></model-viewer>
+          <div class="masonry-overlay"><span>3D Model</span><h3>Interactive Elevation</h3></div>
         </article>
         <article class="masonry-card tall tilt-card scroll-3d" data-depth="0.12">
           <img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=80" alt="Luxury modern exterior elevation">
